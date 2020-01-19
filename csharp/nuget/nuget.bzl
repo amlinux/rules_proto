@@ -125,6 +125,13 @@ def nuget_grpc_packages():
             "lib/net45/Grpc.Core.dll",
             "lib/net45/Grpc.Core.pdb",
             "lib/net45/Grpc.Core.xml",
+            # NOTE: these were manually added
+            "runtimes/win/native/grpc_csharp_ext.x86.dll",
+            "runtimes/win/native/grpc_csharp_ext.x64.dll",
+            "runtimes/linux/native/libgrpc_csharp_ext.x86.so",
+            "runtimes/linux/native/libgrpc_csharp_ext.x64.so",
+            "runtimes/osx/native/libgrpc_csharp_ext.x86.dylib",
+            "runtimes/osx/native/libgrpc_csharp_ext.x64.dylib",
         ],
     )
     nuget_package(
@@ -160,13 +167,6 @@ def nuget_grpc_packages():
                 "lib/netstandard1.5/Grpc.Core.Api.dll",
                 "lib/netstandard1.5/Grpc.Core.Api.pdb",
                 "lib/netstandard1.5/Grpc.Core.Api.xml",
-                # NOTE: these were manually added
-                "runtimes/win/native/grpc_csharp_ext.x86.dll",
-                "runtimes/win/native/grpc_csharp_ext.x64.dll",
-                "runtimes/linux/native/libgrpc_csharp_ext.x86.so",
-                "runtimes/linux/native/libgrpc_csharp_ext.x64.so",
-                "runtimes/osx/native/libgrpc_csharp_ext.x86.dylib",
-                "runtimes/osx/native/libgrpc_csharp_ext.x64.dylib",
             ],
         },
         net_files = {
