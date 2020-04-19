@@ -518,7 +518,7 @@ def proto_compile_impl(ctx):
         # plugin to assemble the actual list of predicted generated artifacts
         # and save these in the 'outputs' list.
         for src in dep.direct_sources:
-            if targets.get(src.path):
+            if targets.get(src):
                 continue
             proto = copy_proto(ctx, descriptor, src)
             targets[src] = proto
